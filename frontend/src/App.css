@@ -1,0 +1,14 @@
+*{
+    margin : 0;
+    padding : 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    
+}
+body{
+    background: #e9eaed;
+    /* background: hsl(230deg 25% 18%); */
+}
+.App-intro{
+    margin-top: 100px;
+}
