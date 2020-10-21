@@ -26,7 +26,7 @@ export default function PostScreens(props) {
       ) : (
         <div className="BlogPost-container">
           <div className="BlogPost-header">
-            <h1 className="post-title"> </h1>
+            <h1 className="post-title"> {post.title} </h1>
             <span className="postedBy">posted on {post.postedOn} by {post.author} </span>
           </div>
           <div className="BlogPost-img">

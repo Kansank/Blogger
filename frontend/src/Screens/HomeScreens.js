@@ -6,6 +6,7 @@ import LoadingBox from '../Components/LoadingBox';
 import MessageBox from '../Components/MessageBox';
 import { useDispatch, useSelector } from 'react-redux';
 import { listPosts } from '../actions/postActions.js';
+import HeaderImg from '../Components/HeaderImg/HeaderImg.js'
 
 const Home = (props) => {
   /* const [blogs, setBlogs] = useState([]);
@@ -23,17 +24,18 @@ const Home = (props) => {
     return (
       <React.Fragment>
       <div className="wrapper">
+      
       {loading ? (
         <LoadingBox></LoadingBox>
       ) : error ? (
         <MessageBox variant="danger">{error}</MessageBox>
       ) : (
-
+      
         <div className="content clearfix">
           <div className="section-grid">
 
               {posts.map((post) => (
-               
+                  
                   <Post key={post._id} post={post} ></Post>
                                
               ))}

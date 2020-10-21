@@ -4,7 +4,7 @@ import firstImg from '../../assets/img1.jpg'
 import secondImg from '../../assets/img2.jpg'
 import './style.css'
 import {NavLink} from 'react-router-dom';
-const HeaderImg = () =>{
+const HeaderImg = (props) =>{
     return (
       <div className="Post-latest">
         <div className="Pt-img">

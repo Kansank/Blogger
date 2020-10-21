@@ -6,9 +6,10 @@
     
 }
 body{
-    background: #e9eaed;
+    /* background: #e9eaed; */
     /* background: hsl(230deg 25% 18%); */
 }
 .App-intro{
     margin-top: 100px;
+    
 }

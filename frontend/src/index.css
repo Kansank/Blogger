@@ -35,6 +35,7 @@ code {
 }
 .section-item{
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);   
+    border-radius: 10px ;
     /* background: hsl(231deg 26% 14%); */
     
 }
@@ -42,21 +43,27 @@ code {
     padding: 20px 20px 20px 20px;
 }
 .section-img{
-  
+    
+}
+.size-img{
+    width: auto;
+    height: 150px;
+    overflow: hidden;
+    
 }
 .section-img img{
     /* max-width: 250px;
     max-height: 250px; */
-    max-width: 29rem;
+    
     width: 100%;
     margin-top: auto;
     margin-left: auto;
     margin-right: auto;
     display: block;
-    overflow: hidden;
+    
 }
 .section-info{
-    text-align: center;
+    text-align: left;
     /* color: white; */
 }
 .section-link a{
@@ -73,20 +80,35 @@ code {
 }
 
 /* Post Screens  */ 
+.post{
+    background: #e9eaed;
+}
 .BlogPost-container{
     background: #fff;
     width: 75%;
-    margin : 25px auto auto auto;
+    margin : auto;
     text-align: center;
     padding: 25px;
     position: relative;
+    
 }
 .BlogPost-img img{
     max-width: 100%;
     max-height: 100%;
     padding: 25px;
-    
 }
+.BlogPost-content{
+    text-align: left;
+}
+.postedBy{
+    font-style: italic;
+    color: #696969
+}
+nav{
+    background: rgb(235,225,225);
+background: linear-gradient(0deg, rgba(235,225,225,1) 11%, rgba(240,228,228,1) 29%, rgba(255,255,255,1) 88%);
+}
+
 @media (max-width:600px){
     .BlogPost-container{
         width: 100%;
