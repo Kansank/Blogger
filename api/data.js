@@ -1,9 +1,24 @@
+import bcrypt from 'bcryptjs';
 const data = {
+    users: [
+        {
+          name: 'Basir',
+          email: 'admin@example.com',
+          password: bcrypt.hashSync('1234', 8),
+          isAdmin: true,
+        },
+        {
+          name: 'John',
+          email: 'user@example.com',
+          password: bcrypt.hashSync('1234', 8),
+          isAdmin: false,
+        },
+    ],
     posts:[
         {
-            _id: '1',
-            category: 'Featured',
+           
             title : 'Fitness Mantra To Live Fit Life',
+            category: 'Featured',
             slug: 'fitness-mantra-to-live-fit-life',
             postedOn: 'July 21, 2016',
             author: 'Faiz Khan',
@@ -12,9 +27,9 @@ const data = {
             Recommended : 'false'
         },
         {
-            _id : '2',
-            category: 'Simple',
+            
             title: 'Beautiful & Special Moment',
+            category: 'Simple',
             slug: 'beautiful-and-special-moment',
             postedOn: 'May 03, 2016',
             author: 'Rizwan Khan',
@@ -23,9 +38,9 @@ const data = {
             Recommended : 'false'
         },
         {
-            _id: '3',
-            category: 'Simple',
+            
             title: 'Beauti lies within special',
+            category: 'Simple',
             slug: 'beauti-lies-within-special',
             postedOn: 'Apr 02, 2017',
             author: 'Hasina Shaikh',
@@ -34,9 +49,9 @@ const data = {
             Recommended : 'true'
         },
         {
-            _id: '4',
-            category: 'Featured',
+            
             title: 'Sliding My Way To Life',
+            category: 'Featured',
             slug: 'sliding-my-way-to-life',
             postedOn: 'Jan 02, 2019',
             author: 'Rizwan Khan',
@@ -45,9 +60,9 @@ const data = {
             Recommended : 'false'
         },
         {
-            _id: '5',
-            category: 'Fashion',
+            
             title: 'Memories From Last Summer',
+            category: 'Fashion',
             slug: 'memories-from-last-summer',
             postedOn: 'Feb 21, 2018',
             author: 'Buland Khan',
